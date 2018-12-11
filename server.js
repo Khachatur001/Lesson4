@@ -18,8 +18,8 @@ io.on('connection', function (socket) {
         messages.push(data);
         io.sockets.emit("display message", data);
     });
-    socket.on("delete message", function (data) {
+    socket.on('uzum em jnjem', function () {
         messages = [];
-        io.sockets.emit("delete");
+        io.sockets.emit("de jnjeq dzer motic");
     });
 });
